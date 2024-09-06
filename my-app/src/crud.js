@@ -15,7 +15,7 @@
 import axios from 'axios'
 
 // This is the URL endpoint through AWS API Gateway.
-const url = 'https://5r839sju3l.execute-api.us-east-1.amazonaws.com/test/'
+const url = 'https://q5rbvsqguc.execute-api.us-east-1.amazonaws.com/Risk-Assessment/'
 
 // This function is used for GET API calls. Whether it pulls information from all submission in the database or
 // one specific entry is determined by the JSON passed to it.

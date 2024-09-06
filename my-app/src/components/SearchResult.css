@@ -1,0 +1,10 @@
+.search-result {
+    padding: 10px 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.search-result:hover {
+    background-color: #efefef;
+}

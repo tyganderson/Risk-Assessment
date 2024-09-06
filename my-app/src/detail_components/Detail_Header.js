@@ -54,6 +54,10 @@ export default class Detail_Header extends React.Component {
                 </div>
                 <br/>
                 <div className='form-block-detail'>
+
+
+                    
+
                     <input type="text" id="departure" defaultValue={this.props.data.departure} className='input-element' placeholder='Departure ✈' required />
                     <label htmlFor="departure" className='label-element'>Departure ✈</label>
                 </div>

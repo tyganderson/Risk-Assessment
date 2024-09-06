@@ -32,6 +32,13 @@ export default class Header extends React.Component {
         const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
+        
+
+        const onSearch=(searchTerm) => {
+            console.log('search', searchTerm);
+        }
+
+
         // Finally we build the date string using the above arrays and Date object
         const date = day[today.getDay()]+' '+month[today.getMonth()]+' '+today.getDate()+' '+today.getFullYear()
 

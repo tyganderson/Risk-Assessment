@@ -26,16 +26,20 @@ const Navbar= () =>{
         {/* id for the shadow control (since detail page show different color of shadow) */}
 
             {/* logo x logo */}
+            <Link to="/view" className='logo'>
             <img src={logo} width="200px" alt="chartandgo-logo"/>
             <span><b>&nbsp;×&nbsp;</b></span>
             <img src={ucm} width="100px" alt="ucm-logo"/>
+            </Link>
 
             {/* project name */}
+            
             <span className='project-name'>
-                <b>CS 4920 Senior Project</b> Spring 2022<br/>
-                <b>Flight Risk Assessment Tool</b><br/>
-                <b>LAW.DAT</b>
+                <Link to="/view" className='logo'><b>CS 4920 Senior Project</b> Spring 2022<br/></Link>
+                <Link to="/view" className='logo'><b>Flight Risk Assessment Tool</b><br/></Link>
+                <Link to="/view" className='logo'><b>LAW.DAT</b></Link>
             </span>
+            
             
             {/* buttons */}
             <Link to="/" className='nav-button'>＋ NEW FORM</Link>

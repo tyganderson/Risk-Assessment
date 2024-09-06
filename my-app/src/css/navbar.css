@@ -85,6 +85,11 @@ body {
     border-radius: 5px;
 }
 
+.logo, .logo:hover, .logo:visited, .logo:active {
+    color:inherit;
+    text-decoration:none;
+}
+
 /* when mouse hover on the buttons */
 .nav-button:hover {
     /* background color: Charter and Go logo's GO grayish blue*/
