@@ -110,14 +110,8 @@ export async function patch(data) {
             }}}
     
     // We make the API call using the above JSON object and return the result of the API call to the caller.
-    const result = await axios.post(url, json_data)
-    .then((response) => {
-        return response.data.body
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-    return result
+    const result = await axios.post(url, json_data);
+    return result.data.body;
 }
 
 export default get
