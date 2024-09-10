@@ -42,6 +42,43 @@
     height: 3em;
 }
 
+.destination-block {
+    /* this will make the block line up each after */
+    display: inline-block;
+
+    /* set relative position as a container for absolute position items inside to be able to line up with it */
+    position: relative;
+
+    /* width and height */
+    width: 200px;
+    height: 3em;
+}
+
+.results-list {
+    /* Prevents suggestion box from moving other page elements */
+    position: absolute;
+    z-index:1 !important;
+
+    /* Set max height of suggestion box before adding scrollbar */
+    max-height: 300px;
+    overflow-y: auto;
+
+    /* Standard stylizing options */
+    width: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.search-result {
+    padding: 10px 20px;
+    /* Prevents the cursor from treating the results as text */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* form-block (in Detail_Header.js, it includes lable and element) */
 .form-block-detail {
     /* this will make the block line up each after */

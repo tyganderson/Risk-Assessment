@@ -1,7 +1,7 @@
 import {useState } from "react";
 import "./App.css"
-import SearchBar from "./components/SearchBar";
-import SearchResultsList from "./components/SearchResultsList";
+import SearchBar from "./scripts/SearchBar";
+import SearchResultsList from "./scripts/SearchResultsList";
 
 
 
@@ -9,9 +9,6 @@ export default function App() {
 
     const [results, setResults] = useState('');
     const [input, setInput] = useState('');
-
-    const [results2, setResults2] = useState('');
-    const [input2, setInput2] = useState('');
 
 
     const handleSelect = (value) => {

@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../css/header.css'
+import SearchBar from '../components/airportfield/SearchBar';
+import SearchResultsList from '../components/airportfield/SearchResultsList';
 
 /*
     CS 4920 Senior Project - Spring 2022
@@ -32,11 +34,16 @@ export default class Header extends React.Component {
         const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-        
+        // Handlers for Destination and Departures
 
-        const onSearch=(searchTerm) => {
-            console.log('search', searchTerm);
+        const handleDeparture = (data) => {
+            this.state.departure = data;
         }
+
+        const handleDestination = (data) => {
+            this.state.destination = data;
+        }
+
 
 
         // Finally we build the date string using the above arrays and Date object
@@ -67,12 +74,10 @@ export default class Header extends React.Component {
                     <label htmlFor="tail" className='label-element'>Tail Number</label>
                 </div>
                 <div className='form-block'>
-                    <input type="text" id="departure" className='input-element' placeholder='Departure ✈' required />
-                    <label htmlFor="departure" className='label-element'>Departure ✈</label>
+                    <SearchBar id="departure" placeholder="Departure ✈"/>
                 </div>
                 <div className='form-block'>
-                    <input type="text" id="destination" className='input-element' placeholder='► Destination' required />
-                    <label htmlFor="destination" className='label-element'>► Destination</label>
+                    <SearchBar id="destination" placeholder="► Destination"/>
                 </div>
 
                 {/* The break line between header form and sections. It's styled in css! */}
