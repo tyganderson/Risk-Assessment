@@ -33,6 +33,7 @@ const Redirect = () => {
         <Route index element={<App />} /> 
 
         {/* These are other pages to be used for navigation */}
+        <Route path="/Risk-Assessment" element={<App />} />
         <Route path="/view" element={<View />} />
         <Route path="/detail" element={<Detail_App />} />
       </Routes> 
