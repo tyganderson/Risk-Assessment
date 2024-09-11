@@ -132,34 +132,26 @@ export default function App(props) {
         
         // Variables to hold error messages (so multiple messages can be displayed at once) and how many errors are found
         var errors = []
-        var count = 0
 
         // Checking each header field and inserting a corresponding error message to be displayed if the field is empty
         if(format.body.header.departure[1] == null) {
             errors.push("Departure field cannot be empty!")
-            count++
         }
         if(format.body.header.destination[1] == null) {
             errors.push("Destination field cannot be empty!")
-            count++
         }
         if(format.body.header.tripNum[1] == null) {
             errors.push("Trip Number field cannot be empty!")
-            count++
         }
         if(format.body.header.tailNum[1] == null) {
             errors.push("Tail Number field cannot be empty!")
-            count++
         }
 
         // Set the 'errors' state to the array of error messages found while checking
         setErrorMessage(errors)
 
         // If any errors are found, we return 'false' to the caller (used to determine whether to make the API call)
-        if(count > 0)
-            return false
-        else   
-            return true
+        return errors.length < 1;
     }
 
     // useEffect() is used to monitor changes to the 'body' state (for error message handling) and reset
