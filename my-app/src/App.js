@@ -98,6 +98,10 @@ export default function App(props) {
         // Check if all header fields have been filled. If true, continue. If not, displays error messages
         if(checkNullHeaders()) {
 
+            // Turn destination and departure codes to uppercase
+            format.body.header.departure = format.body.header.departure.toUpperCase();
+            format.body.header.destination = format.body.header.destination.toUpperCase();
+
             // Here we make our API call and store the response from the attempt in the 'body' state
             var api_response = await postOne(format)
             setBody(api_response)
