@@ -6,6 +6,7 @@ import {postOne} from './crud'
 import Header from "./components/Header"
 import { useNavigate } from "react-router-dom"
 import './css/app.css'
+import Codes from './scripts/formatted_ac_codes.json'
 
 /*
     CS 4920 Senior Project - Spring 2022
@@ -134,12 +135,22 @@ export default function App(props) {
         var errors = []
 
         // Checking each header field and inserting a corresponding error message to be displayed if the field is empty
-        if(format.body.header.departure[1] == null) {
+        if(!format.body.header.departure) {
             errors.push("Departure field cannot be empty!")
         }
-        if(format.body.header.destination[1] == null) {
+        else if(Codes.filter(index => index.iata === format.body.header.departure.toUpperCase()).length != 1) {
+            errors.push("Invalid departure IATA code.");
+        }
+
+
+        if(!format.body.header.destination) {
             errors.push("Destination field cannot be empty!")
         }
+        else if (Codes.filter(index => index.iata === format.body.header.destination.toUpperCase()).length != 1) {
+            errors.push("Invalid destination IATA code.");
+        }
+
+
         if(format.body.header.tripNum[1] == null) {
             errors.push("Trip Number field cannot be empty!")
         }
