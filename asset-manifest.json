@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Risk-Assessment/static/css/main.da4fb588.css",
-    "main.js": "/Risk-Assessment/static/js/main.191a3f0f.js",
+    "main.css": "/Risk-Assessment/static/css/main.e3097ced.css",
+    "main.js": "/Risk-Assessment/static/js/main.8461ca65.js",
     "static/media/logo-300-px-c.png": "/Risk-Assessment/static/media/logo-300-px-c.88b17dc49783133bd407.png",
     "static/media/chartandgo-logo-2.png": "/Risk-Assessment/static/media/chartandgo-logo-2.29276aa8ece1e022264c.png",
     "index.html": "/Risk-Assessment/index.html",
-    "main.da4fb588.css.map": "/Risk-Assessment/static/css/main.da4fb588.css.map",
-    "main.191a3f0f.js.map": "/Risk-Assessment/static/js/main.191a3f0f.js.map"
+    "main.e3097ced.css.map": "/Risk-Assessment/static/css/main.e3097ced.css.map",
+    "main.8461ca65.js.map": "/Risk-Assessment/static/js/main.8461ca65.js.map"
   },
   "entrypoints": [
-    "static/css/main.da4fb588.css",
-    "static/js/main.191a3f0f.js"
+    "static/css/main.e3097ced.css",
+    "static/js/main.8461ca65.js"
   ]
 }
