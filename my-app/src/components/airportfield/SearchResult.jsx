@@ -4,7 +4,6 @@ const SearchResult = ({id, name, setInput}) => {
 
   const handler = () => {
     setInput(id);
-    console.log('trigger');
   }
   
 

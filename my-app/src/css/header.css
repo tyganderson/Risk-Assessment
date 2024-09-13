@@ -54,6 +54,18 @@
     height: 3em;
 }
 
+.destination-block-detail {
+    /* this will make the block line up each after */
+    display: inline-block;
+
+    /* set relative position as a container for absolute position items inside to be able to line up with it */
+    position: relative;
+
+    /* width and height */
+    width: 324px;
+    height: 3em;
+}
+
 .results-list {
     /* Prevents suggestion box from moving other page elements */
     position: absolute;

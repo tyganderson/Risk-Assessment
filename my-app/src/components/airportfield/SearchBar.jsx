@@ -3,9 +3,10 @@ import '../../css/header.css';
 import SearchResult from './SearchResult';
 import Codes from '../../scripts/formatted_ac_codes.json';
 
-const SearchBar = ({id, placeholder}) => {
+const SearchBar = ({id, placeholder,initial, style}) => {
+
     const [results, setResults] = useState([]);
-    const [input, setInput] = useState('');
+    const [input, setInput] = useState(initial);
     const refContainer = useRef(null); // This ref is used to refer to the container div
 
     const handleChange = (value) => {
@@ -42,12 +43,14 @@ const SearchBar = ({id, placeholder}) => {
     }, [refContainer]);
 
     return (
+        
         <div ref={refContainer}>  {/* Assign ref to the container */}
-            <div className='destination-block'>
-                <input type="text" id={id} className='input-element' placeholder={placeholder}
+            <div className={style}>
+                
+                <input type="text" id={id} className='input-element' placeholder={placeholder} 
+                    defaultValue={input}
                     onChange={(e) => handleChange(e.target.value)}
-                    value={input}
-                    required />
+                    value={input} required /> 
                 <label htmlFor="{id}" className='label-element'>{placeholder}</label>
                 <div className="results-list">
                     {input && results.map(result => (

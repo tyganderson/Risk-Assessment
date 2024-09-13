@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import '../css/header.css'
 import SearchBar from '../components/airportfield/SearchBar';
-import SearchResultsList from '../components/airportfield/SearchResultsList';
 
 /*
     CS 4920 Senior Project - Spring 2022
@@ -34,18 +33,7 @@ export default class Header extends React.Component {
         const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-        // Handlers for Destination and Departures
-
-        const handleDeparture = (data) => {
-            this.state.departure = data;
-        }
-
-        const handleDestination = (data) => {
-            this.state.destination = data;
-        }
-
-
-
+   
         // Finally we build the date string using the above arrays and Date object
         const date = day[today.getDay()]+' '+month[today.getMonth()]+' '+today.getDate()+' '+today.getFullYear()
 
@@ -74,7 +62,7 @@ export default class Header extends React.Component {
                     <label htmlFor="tail" className='label-element'>Tail Number</label>
                 </div>
                 <div className='form-block'>
-                    <SearchBar id="departure" placeholder="Departure ✈"/>
+                    <SearchBar id="departure" placeholder="Departure ✈" style="destination-block"/>
                 </div>
                 <div className='form-block'>
                     <SearchBar id="destination" placeholder="► Destination"/>

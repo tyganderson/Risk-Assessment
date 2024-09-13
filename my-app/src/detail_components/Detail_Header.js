@@ -15,6 +15,7 @@
 
 import React from "react";
 import '../css/header.css'
+import SearchBar from '../components/airportfield/SearchBar'
 
 export default class Detail_Header extends React.Component {
     constructor(props) {
@@ -54,16 +55,10 @@ export default class Detail_Header extends React.Component {
                 </div>
                 <br/>
                 <div className='form-block-detail'>
-
-
-                    
-
-                    <input type="text" id="departure" defaultValue={this.props.data.departure} className='input-element' placeholder='Departure ✈' required />
-                    <label htmlFor="departure" className='label-element'>Departure ✈</label>
+                    <SearchBar id="departure" initial={this.props.data.departure} placeholder="Departure ✈" style="destination-block-detail"/>
                 </div>
                 <div className='form-block-detail'>
-                    <input type="text" id="destination" defaultValue={this.props.data.destination} className='input-element' placeholder='► Destination' required />
-                    <label htmlFor="destination" className='label-element'>► Destination</label>
+                    <SearchBar id="destination" initial={this.props.data.destination} placeholder="► Destination" style="destination-block-detail"/>
                 </div>                
             </div>
         )
