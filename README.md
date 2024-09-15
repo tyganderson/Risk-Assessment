@@ -10,13 +10,14 @@ Our team chose to use this project to explore new frameworks and technologies th
 
 This project was originally completed and submitted in May 2022. As of August 2024, I've worked to update the project using personal AWS Lambda and MongoDB back-ends and providing a live project demo for interested parties using GitHub pages. There are several features that were not included in the original project, due to time constraints, that I will be gradually working to implement. These features include:
 
-* Airport IATA code lookup for form Departure and Destination blocks
-* Validating IATA codes at form submission
+* Airport IATA code lookup for form Departure and Destination blocks ✔
+* Validating IATA codes at form submission ✔
+* Button to remove flight entries ✔
 * Validating trip number format 
 * Validating tail number format 
 * User authentication and authorization
 * Add footer content
 * Restrict editing priveleges to admin users
-* Allow admin users to delete flight entries
+* Restrict entry deletion to admin users
 * Include search function when viewing submitted entries
 * Load additional flight entries when scrolling to bottom of view
