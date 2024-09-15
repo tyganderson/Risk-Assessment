@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 import {Link} from 'react-router-dom'
-import {get, remove} from './crud'
+import {get, remove} from './api handler/crud'
 import './css/view.css'
 import { FaRegTrashAlt } from "react-icons/fa";
 

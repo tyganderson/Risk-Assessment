@@ -15,10 +15,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import App from './App.js';
+import App from './components/App.js';
 import View from './View.js';
 import Navbar from "./components/Navbar.js"
-import Detail_App from "./detail_components/Detail_App.js"
+import Detail_App from "./components/detail_components/Detail_App.js"
 
 // redirect function
 const Redirect = () => {

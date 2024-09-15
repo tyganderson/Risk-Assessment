@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Section from "./components/Section"
-import Format from './standardPost'
-import {postOne} from './crud' 
-import Header from "./components/Header"
+import Section from "./Section"
+import Format from '../api handler/standardPost'
+import {postOne} from '../api handler/crud' 
+import Header from "./Header"
 import { useNavigate } from "react-router-dom"
-import './css/app.css'
-import Codes from './scripts/formatted_ac_codes.json'
+import '../css/app.css'
+import Codes from '../ac codes/formatted_ac_codes.json'
 
 /*
     CS 4920 Senior Project - Spring 2022

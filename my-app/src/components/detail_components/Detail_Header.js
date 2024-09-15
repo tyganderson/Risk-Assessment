@@ -14,8 +14,8 @@
 */
 
 import React from "react";
-import '../css/header.css'
-import SearchBar from '../components/airportfield/SearchBar'
+import '../../css/header.css'
+import SearchBar from '../airportfield/SearchBar'
 
 export default class Detail_Header extends React.Component {
     constructor(props) {

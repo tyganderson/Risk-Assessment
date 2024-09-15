@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../../css/header.css';
 import SearchResult from './SearchResult';
-import Codes from '../../scripts/formatted_ac_codes.json';
+import Codes from '../../ac codes/formatted_ac_codes.json';
 
 const SearchBar = ({id, placeholder,initial, style}) => {
 

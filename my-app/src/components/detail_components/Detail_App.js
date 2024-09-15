@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import {get, patch} from '../crud' 
+import {get, patch} from '../../api handler/crud' 
 import { useLocation } from "react-router-dom"
 import Detail_Header from "./Detail_Header"
 import Detail_Section from "./Detail_Section"
