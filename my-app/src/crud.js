@@ -114,4 +114,17 @@ export async function patch(data) {
     return result.data.body;
 }
 
+
+export async function remove(key) {
+    const json_data = {
+        "params":{
+            "httpMethod": "DELETE",
+            "amount": "ONE",
+            "key": key
+        }
+    }
+    const result = await axios.post(url, json_data);
+    return result.data.body;
+}
+
 export default get

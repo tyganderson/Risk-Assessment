@@ -23,7 +23,9 @@
     /* right/left auto will make content to the center */
 
     /* reasonable width */
-    max-width: 524px;
+    min-width: 524px;
+    max-width: 50%;
+    /* max-width: 524px; */
 }
 
 /* the colorful frames */
@@ -75,10 +77,11 @@
 .orange-frame:hover, 
 .red-frame:hover {
     /* make them bigger */
-    transform: scale(1.04);
+    /* transform: scale(1.04); */
 
     /* shodow makes it looks like flowing up */
     box-shadow: 4px 4px 8px rgb(0, 0, 0, .1);
+    background-color: #eeeeee;
 }   
 
 /* the titles inside frames */
@@ -113,3 +116,31 @@ Wed Apr 27 2022 */
     text-decoration: none;
     color: #000;
 }
+
+.detail-block {
+    display: inline-block;
+    left: 0;
+}
+
+.admin-block {
+    background-color: #273c50;
+    padding: 12px 12px 0px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 1.5em 0em 2em 2em;
+    display: inline-block;
+    position: absolute;
+    transition: .35s;
+    color:white;
+}
+
+.admin-block:hover {
+    /* make them bigger */
+    background-color: #aeb6be;
+    
+    text-shadow: 0 0 6px #fff;
+
+    /* shodow makes it looks like flowing up */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    border: 2px solid #aeb6be;
+}   

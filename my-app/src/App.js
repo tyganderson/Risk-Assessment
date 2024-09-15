@@ -155,10 +155,10 @@ export default function App(props) {
         }
 
 
-        if(format.body.header.tripNum[1] == null) {
+        if(!format.body.header.tripNum) {
             errors.push("Trip Number field cannot be empty!")
         }
-        if(format.body.header.tailNum[1] == null) {
+        if(!format.body.header.tailNum) {
             errors.push("Tail Number field cannot be empty!")
         }
 

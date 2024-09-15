@@ -97,7 +97,7 @@ body {
 
     /* make the text white and glow */
     color: #fff;
-    text-shadow: 0 0 6px #fff;
+    /* text-shadow: 0 0 1px #fff; */
 
     /* shodow makes it looks like flowing up */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
