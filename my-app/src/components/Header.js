@@ -65,7 +65,7 @@ export default class Header extends React.Component {
                     <SearchBar id="departure" placeholder="Departure ✈" style="destination-block"/>
                 </div>
                 <div className='form-block'>
-                    <SearchBar id="destination" placeholder="► Destination"/>
+                    <SearchBar id="destination" placeholder="► Destination" style="destination-block"/>
                 </div>
 
                 {/* The break line between header form and sections. It's styled in css! */}
